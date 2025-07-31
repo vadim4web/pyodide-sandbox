@@ -17,15 +17,15 @@ cd pyodide-sandbox
 
 3. Run the **setup** script
 
-&nbsp;&nbsp;&nbsp;&nbsp;This command will:
+This command will:
 
-&nbsp;&nbsp;&nbsp;&nbsp;- [x] Install all dependencies
+- [x] Install all dependencies
 
-&nbsp;&nbsp;&nbsp;&nbsp;- [x] Automatically update the homepage in package.json
+- [x] Automatically update the homepage in package.json
 
-&nbsp;&nbsp;&nbsp;&nbsp;- [x] Build the app
+- [x] Build the app
 
-&nbsp;&nbsp;&nbsp;&nbsp;- [x] Deploy it to GitHub Pages
+- [x] Deploy it to GitHub Pages
 
 ```shell
 npm run setup
