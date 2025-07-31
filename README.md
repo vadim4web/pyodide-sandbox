@@ -6,35 +6,33 @@ An interactive Python playground built with React, Vite, and Pyodide — instant
 
 1. Fork the repository
 
-Use GitHub’s Fork button to create your own copy.
+Use GitHub’s **`Fork`** button to create your own copy.
 
-2. Clone your fork
+2. **Clone** your fork
 
 ```shell
 git clone https://github.com/your-username/pyodide-sandbox.git
 cd pyodide-sandbox
 ```
 
-3. Run the setup script
+3. Run the **setup** script
 
-This command will:
+&nbsp;&nbsp;&nbsp;&nbsp;This command will:
 
-[+] Install all dependencies
+&nbsp;&nbsp;&nbsp;&nbsp;- [x] Install all dependencies
 
-[+] Automatically update the homepage in package.json
+&nbsp;&nbsp;&nbsp;&nbsp;- [x] Automatically update the homepage in package.json
 
-[+] Build the app
+&nbsp;&nbsp;&nbsp;&nbsp;- [x] Build the app
 
-[+] Deploy it to GitHub Pages
-
-Run:
+&nbsp;&nbsp;&nbsp;&nbsp;- [x] Deploy it to GitHub Pages
 
 ```shell
 npm run setup
 ```
 
 Your sandbox will be available at:
-[](https://your-username.github.io/pyodide-sandbox)
+[https://your-username.github.io/pyodide-sandbox](https://your-username.github.io/pyodide-sandbox)
 
 ## 🌐 Custom Script Source
 You can load your own Python script via a URL parameter:
@@ -74,11 +72,11 @@ npm run lint # Run ESLint
 
 ## 🧩 Customize
 
-Change the default script in DEFAULT_SRC in App.jsx
+Change the default script in `DEFAULT_SRC` in `src/App.jsx`
 
-Modify UI and styles in App.css
+Modify UI and styles in `src/index.css`
 
-Replace logos or adjust labels in App.jsx
+Replace logos or adjust labels in `src/App.jsx`
 
 ## 📦 Deployment
 
