@@ -108,7 +108,7 @@ export default function App() {
 	return (
 		<>
 			{/* Input box with a label */}
-			<fieldset className="box-container input-container container">
+			<fieldset className="container box-container input-container ">
 				<legend>
 					<img src="python-logo.png" alt="python-logo" />
 					&nbsp;Пайтон код:
@@ -117,7 +117,7 @@ export default function App() {
 					ref={replRef} // This div will host the Monaco code editor
 					style={{
 						width: '100%',
-						height: '42vmin',
+						height: '41vh',
 						border: '1px solid var(--border-gray)',
 					}}
 					className="box input-box"
@@ -127,7 +127,7 @@ export default function App() {
 			</fieldset>
 
 			{/* Run button with icon */}
-			<div className="controls-container container">
+			<div className="container controls-container ">
 				<button onClick={runCode} disabled={loading} className="run-button">
 					<svg
 						className="run-button-icon"
@@ -151,11 +151,11 @@ export default function App() {
 			</div>
 
 			{/* Output box with a label */}
-			<fieldset className="box-container output-container container">
+			<fieldset className="container box-container output-container ">
 				<legend>Вивід:</legend>
 				<textarea
 					ref={outputRef} // Output goes here
-					style={{ width: '100%', height: '42vmin' }}
+					style={{ width: '100%', height: '41vh' }}
 					className="box output-box"
 					rows="20"
 					disabled // Read-only

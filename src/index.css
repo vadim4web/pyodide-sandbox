@@ -30,7 +30,7 @@ body {
 
 #root {
   display: grid;
-  grid-template-rows: 47vmin 6vmin 47vmin;
+  grid-template-rows: 47vh 6vh 47vh;
   width: 100%;
   min-width: 320px;
   height: 100vh;
@@ -42,15 +42,12 @@ body {
 /* Box containers */
 
 .box-container {
-  width: 47vmin;
   margin-inline: auto;
   background: var(--solid-gray);
   border-radius: 0.5em;
 }
 
 .box {
-  width: 45vmin;
-  aspect-ratio: 1;
   background: whitesmoke;
   border-radius: 0.5em;
   overflow: hidden;
@@ -67,7 +64,7 @@ body {
 p {
   display: inline-block;
   width: fit-content;
-  height: 4vmin;
+  height: 4vmax;
   margin: 0;
 }
 
@@ -87,7 +84,6 @@ img {
 /* Controls */
 
 .controls-container {
-  width: 47vmin;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -102,9 +98,13 @@ img {
 }
 
 .run-button-icon {
-  width: 2.25rem;
-  height: 2.25rem;
-  transition: fill 0.33s;
+  width: 2rem;
+  height: 2rem;
+  transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -ms-transition: fill 0.5s ease;
+  -o-transition: fill 0.5s ease;
 }
 
 /* Button hover/active states */
@@ -119,8 +119,27 @@ img {
 
 /* Responsive layout */
 
+.container,
+.box {
+  transition: min-width 0.5s ease, width 0.5s ease, max-width 0.5s ease;
+  -webkit-transition: min-width 0.5s ease, width 0.5s ease, max-width 0.5s ease;
+  -moz-transition: min-width 0.5s ease, width 0.5s ease, max-width 0.5s ease;
+  -ms-transition: min-width 0.5s ease, width 0.5s ease, max-width 0.5s ease;
+  -o-transition: min-width 0.5s ease, width 0.5s ease, max-width 0.5s ease;
+}
+
 @media (orientation: landscape) {
   .container {
-    width: 50vw;
+    min-width: 47%;
+    width: 47%;
+    max-width: 47%;
+  }
+}
+
+@media (orientation: portrait) {
+  .container {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
   }
 }
