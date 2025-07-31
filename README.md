@@ -43,6 +43,15 @@ You can load your own Python script via a URL parameter:
 
 `https://your-username.github.io/pyodide-sandbox?src=https://raw.githubusercontent.com/ekidscoding/python/main/examples/kirilche/4_1.py`
 
+⚠️ **Important:** Make sure the `src` URL points to the **raw content** of the Python file (e.g., from GitHub’s `/raw/` view), or it won’t load correctly in the editor.
+
+### Here’s the plain paragraph you can copy:
+
+For some nice example `Python` scripts to try out, check out the repository at [https://github.com/ekidscoding/python/tree/main/examples/kirilche](https://github.com/ekidscoding/python/tree/main/examples/kirilche).
+
+*Keep in mind that `Pyodide` does not support interactive prompts like `input()`, so those won’t work in this sandbox environment.*
+
+
 ## 🛠 Scripts
 
 ```shell
