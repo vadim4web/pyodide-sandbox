@@ -1,0 +1,126 @@
+:root {
+  /* Typography and layout base */
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 150%;
+  font-weight: 400;
+  line-height: 1.5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Theme colors */
+  --solid-gray: #808080;
+  --border-gray: #ccc;
+
+  --fresh-green: #28a745;
+  --lighter-green: #45c162;
+  --darker-green: #1e7e34;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: 47vmin 6vmin 47vmin;
+  width: 100%;
+  min-width: 320px;
+  height: 100vh;
+  max-height: 100dvh;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Box containers */
+
+.box-container {
+  width: 47vmin;
+  margin-inline: auto;
+  background: var(--solid-gray);
+  border-radius: 0.5em;
+}
+
+.box {
+  width: 45vmin;
+  aspect-ratio: 1;
+  background: whitesmoke;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.output-box {
+  resize: none;
+  overflow: auto;
+  padding-left: 2.75rem;
+}
+
+/* Typography elements */
+
+p {
+  display: inline-block;
+  width: fit-content;
+  height: 4vmin;
+  margin: 0;
+}
+
+legend {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid var(--solid-gray);
+  border-radius: 0.5em;
+}
+
+img {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Controls */
+
+.controls-container {
+  width: 47vmin;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.run-button {
+  padding: 0;
+  border: none;
+  justify-self: start;
+  cursor: pointer;
+  border-radius: 0.5em;
+}
+
+.run-button-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  transition: fill 0.33s;
+}
+
+/* Button hover/active states */
+
+.run-button-icon:hover path {
+  fill: var(--lighter-green);
+}
+
+.run-button-icon:active path {
+  fill: var(--darker-green);
+}
+
+/* Responsive layout */
+
+@media (orientation: landscape) {
+  .container {
+    width: 50vw;
+  }
+}
