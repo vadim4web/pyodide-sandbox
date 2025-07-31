@@ -3,8 +3,8 @@
 An interactive Python playground built with React, Vite, and Pyodide — instantly deployable on GitHub Pages.
 
 <p>
-<img src="https://raw.githubusercontent.com/vadim4web/pyodide-sandbox/refs/heads/main/doc/landscape.png" alt="landscape screenshot" style="width: 66.6%; aspect-ratio: 1.7437275" />
-<img src="https://raw.githubusercontent.com/vadim4web/pyodide-sandbox/refs/heads/main/doc/portrait.png" alt="portrait screenshot" style="width: 33.3%; aspect-ratio: 0.5053763" />
+<img src="https://raw.githubusercontent.com/vadim4web/pyodide-sandbox/refs/heads/main/doc/landscape.png" alt="landscape screenshot" style="width: 66%; aspect-ratio: 1.7437275" />
+<img src="https://raw.githubusercontent.com/vadim4web/pyodide-sandbox/refs/heads/main/doc/portrait.png" alt="portrait screenshot" style="width: 33%; aspect-ratio: 0.5053763" />
 </p>
 
 ## 🚀 Getting Started
