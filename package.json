@@ -16,6 +16,9 @@
   },
   "dependencies": {
     "gh-pages": "^6.3.0",
+    "monaco-editor": "^0.52.2",
+    "monaco-editor-workers": "^0.45.0",
+    "monaco-types": "^0.1.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

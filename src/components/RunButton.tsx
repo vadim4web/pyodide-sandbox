@@ -1,8 +1,22 @@
 /**
+ * RunButtonProps
+ *
+ * Props for the RunButton component.
+ *
+ * @property {() => void} onClick - Callback fired when the button is clicked
+ * @property {boolean} loading - Indicates whether the app is loading dependencies; disables button if true
+ */
+
+/**
  * RunButton Component
  *
- * Renders a button that runs the Python code when clicked.
- * It also shows a play icon and loading state (disabled when loading).
+ * Renders a button that triggers Python code execution.
+ * Displays a play icon SVG and disables itself when loading.
+ *
+ * Accessibility & UX:
+ * - Disabled while loading to prevent multiple runs
+ * - Clear visual icon for action
+ * - Accompanied by a localized label and Python logo
  */
 interface RunButtonProps {
   onClick: () => void
@@ -12,6 +26,12 @@ interface RunButtonProps {
 export default function RunButton({ onClick, loading }: RunButtonProps) {
   return (
     <div className="container controls-container">
+      {/* 
+        The main action button:
+        - Triggers onClick callback when pressed
+        - Disabled during loading
+        - Contains a visually descriptive SVG play icon
+      */}
       <button onClick={onClick} disabled={loading} className="run-button">
         <svg
           className="run-button-icon"
@@ -29,6 +49,8 @@ export default function RunButton({ onClick, loading }: RunButtonProps) {
           />
         </svg>
       </button>
+
+      {/* Label explaining the button's purpose, including a Python logo */}
       👈&nbsp;виконати &nbsp;
       <img src="python-logo.png" alt="python-logo" />
       &nbsp;Пайтон код

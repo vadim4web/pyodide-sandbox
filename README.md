@@ -71,9 +71,9 @@ npm run lint # Run ESLint
 
 ## 🧩 Customize It
 
-- Change the default script source: `src/constants/defaultSrc.js`  
+- Change the default script source: `src/constants/defaultSrc.ts`  
 
-- Modify layout or labels: `src/components/*.jsx`  
+- Modify layout or labels: `src/components/*.tsx`  
 
 - Tweak styles and themes: src/index.css  
 
