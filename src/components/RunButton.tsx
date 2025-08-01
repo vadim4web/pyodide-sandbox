@@ -1,19 +1,17 @@
-// src/components/RunButton.jsx
-
 /**
  * RunButton Component
  *
  * Renders a button that runs the Python code when clicked.
  * It also shows a play icon and loading state (disabled when loading).
- *
- * @param {Object} props
- * @param {Function} props.onClick - Function to call when button is clicked
- * @param {boolean} props.loading - Whether the app is still loading dependencies
  */
-export default function RunButton({ onClick, loading }) {
+interface RunButtonProps {
+  onClick: () => void
+  loading: boolean
+}
+
+export default function RunButton({ onClick, loading }: RunButtonProps) {
   return (
     <div className="container controls-container">
-      {/* Run button triggers code execution; disabled while loading */}
       <button onClick={onClick} disabled={loading} className="run-button">
         <svg
           className="run-button-icon"
@@ -23,7 +21,6 @@ export default function RunButton({ onClick, loading }) {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          {/* Play icon (triangle inside a circle) */}
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -32,8 +29,6 @@ export default function RunButton({ onClick, loading }) {
           />
         </svg>
       </button>
-
-      {/* Tooltip-style label next to the button */}
       👈&nbsp;виконати &nbsp;
       <img src="python-logo.png" alt="python-logo" />
       &nbsp;Пайтон код

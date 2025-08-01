@@ -1,15 +1,16 @@
-// src/components/PythonEditor.jsx
+import { RefObject } from 'react'
 
 /**
  * PythonEditor Component
  *
  * This component renders the code editor container for writing Python code.
- * The actual editor is created dynamically (Monaco) and attached to the DOM node via `replRef`.
- *
- * @param {Object} props
- * @param {React.RefObject} props.replRef - Ref to a div where Monaco will render the editor
+ * The actual editor is created dynamically (Monaco) and attached to the DOM node via replRef.
  */
-export default function PythonEditor({ replRef }) {
+interface PythonEditorProps {
+  replRef: RefObject<HTMLDivElement>
+}
+
+export default function PythonEditor({ replRef }: PythonEditorProps) {
   return (
     <fieldset className="container box-container input-container">
       <legend>
@@ -17,9 +18,8 @@ export default function PythonEditor({ replRef }) {
         &nbsp;Пайтон код:
       </legend>
 
-      {/* This <div> will be filled with the Monaco editor */}
       <div
-        ref={replRef} // Ref passed from parent to gain access to the DOM node
+        ref={replRef}
         style={{
           width: '100%',
           height: '41vh',

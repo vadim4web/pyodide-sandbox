@@ -1,4 +1,4 @@
-// src/constants/defaultSrc.js
+// src/constants/defaultSrc.ts
 
 /**
  * Default URL for loading the initial Python script in the editor.
