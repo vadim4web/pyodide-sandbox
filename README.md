@@ -15,7 +15,7 @@ Use GitHub’s **`Fork`** button to create your own copy.
 
 2. **Clone** your fork
 
-```shell
+```bash
 git clone https://github.com/your-username/pyodide-sandbox.git
 cd pyodide-sandbox
 ```
@@ -32,7 +32,7 @@ This command will:
 
 - [x] Deploy it to GitHub Pages
 
-```shell
+```bash
 npm run setup
 ```
 
@@ -50,57 +50,46 @@ You can load your own Python script via a URL parameter:
 
 ⚠️ **Important:** Make sure the `src` URL points to the **raw content** of the Python file (e.g., from GitHub’s `/raw/` view), or it won’t load correctly in the editor.
 
-### Here’s the plain paragraph you can copy:
+## 📚 Suggested Examples
+For fun and useful Python scripts to try, explore this collection:
+[🔗 ekidscoding/python/examples/kirilche](https://github.com/ekidscoding/python/tree/main/examples/kirilche)
 
-For some nice example `Python` scripts to try out, check out the repository at [https://github.com/ekidscoding/python/tree/main/examples/kirilche](https://github.com/ekidscoding/python/tree/main/examples/kirilche).
-
-*Keep in mind that `Pyodide` does not support interactive prompts like `input()`, so those won’t work in this sandbox environment.*
+✅ input() is now supported — prompts will appear using the browser's native window.prompt() dialog. Your Python scripts can be interactive!
 
 
-## 🛠 Scripts
+## 🛠 Available Scripts
 
-```shell
+```bash
 npm run dev # Start local development server
-```
-
-```shell
 npm run build # Build the app for production
-```
-
-```shell
 npm run preview # Preview production build
-```
-
-```shell
 npm run deploy # Deploy manually to GitHub Pages
-```
-
-```shell
 npm run setup # Full automatic setup: install, build, and deploy
-```
-
-```shell
 npm run lint # Run ESLint
 
 ```
 
-## 🧩 Customize
+## 🧩 Customize It
 
-Change the default script in `DEFAULT_SRC` in `src/App.jsx`
+- Change the default script source: `src/constants/defaultSrc.js`  
 
-Modify UI and styles in `src/index.css`
+- Modify layout or labels: `src/components/*.jsx`  
 
-Replace logos or adjust labels in `src/App.jsx`
+- Tweak styles and themes: src/index.css  
 
-## 📦 Deployment
+## 📦 Manual Deployment
 
 If you want to deploy manually:
 
 1. Set your `GITHUB_USER` env variable
 
+```bash
+export GITHUB_USER=your-username
+```
+
 2. Run:
 
-```shell
+```bash
 npm run deploy
 ```
 
@@ -108,4 +97,17 @@ The predeploy and postinstall scripts ensure homepage is always correct.
 
 ## ✅ License
 
-MIT — use freely and modify for your needs.
+MIT — free to use, modify, fork, and deploy.
+
+```yaml
+
+---
+
+Would you like me to:
+
+- Commit this to your project as `README.md`?
+- Add a badge or CI status at the top?
+- Translate or localize the readme (e.g., to Ukrainian or another language)?
+
+Let me know.
+```
